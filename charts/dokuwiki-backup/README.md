@@ -161,3 +161,29 @@ helm install my-dokuwiki-backup ./dokuwiki-backup -f values.yaml
 ```
 
 This will set up the backup container and the cron jobs according to your specified configuration, ensuring that your DokuWiki data is backed up regularly.
+
+## More Commands
+
+Add the repo:
+
+```sh
+helm repo add sdpr-cdw https://bcgov.github.io/sdpr-cdw-helm-charts
+```
+
+Search the repo:
+
+```sh
+helm search repo sdpr-cdw
+```
+
+Update the repo:
+
+```sh
+helm repo update
+```
+
+Install the repo:
+
+```sh
+helm install dokuwiki-backup sdpr-cdw/automated-dokuwiki-backup -f values.yaml
+```
